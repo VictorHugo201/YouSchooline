@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-cont {
+    background: #f2f2f2;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-header {
+    width: 100%;
+    height: auto;
+    text-align: center;  
+}
+
+.desc-header img {
+    width: 90%;
+}
+
+.desc-header p {
+    font-size: 2em;
+    color: #ff0000;
+}
+
+.cont-header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-header h1 {
+    color: #ca252a;
+}
+
+.cont-header form {
+    width: 350px; 
+    height: auto;
+    border: 1px solid #000000;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.cont-header form label {
+    display: block;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+}
+
+#loginUsuario, #loginProfesor {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: .7em;
+    border: none;
+    border-radius: 8px;
+    background: #6a0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.alert {
+    color: rgb(133, 72, 72);
+}
+
+.app-sidebar__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-sidebar__toggle::before {
+  display: none;
+}
